@@ -1,0 +1,26 @@
+{
+  "name": "sanber-api-automation",
+  "version": "1.0.0",
+  "description": "api automation script with supertest",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx mocha --reporter mochawesome",
+    "suites:booking" : "npx mocha --reporter mochawesome module/test/suites/booking.suite.js",
+    "suites:user" : "npx mocha --reporter mochawesome module/test/user.suite.js"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "alvin",
+  "license": "ISC",
+  "dependencies": {
+    "jsonschema": "^1.4.1",
+    "supertest": "^6.3.4"
+  },
+  "devDependencies": {
+    "chai": "^5.0.3",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3"
+  }
+}
